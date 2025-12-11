@@ -1,0 +1,417 @@
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barrio&family=Zalando+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barrio&family=Zalando+Sans:wght@700&display=swap');
+
+  header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+body {
+  margin: 0;
+  padding-top: 150px; /* espaço para a nav fixa */
+  font-family: 'Press Start 2P', monospace !important;
+  width: 100%;
+}
+
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 35px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #faf9f7;
+  }
+
+  .menu-icon {
+    width: 40px;
+    height: 4px;
+    background: #000;
+    position: relative;
+  }
+
+  .menu-icon::before, .menu-icon::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #000;
+    position: absolute;
+    left: 0;
+  }
+
+  .menu-icon::before { top: -10px; }
+  .menu-icon::after { top: 10px; }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo a {
+    font-size: 55px;
+    text-decoration: underline;
+    color: #111;
+    font-family: 'Barrio', serif !important;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .search-icon::after {
+    content: "";
+    width: 3px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    right: -8px;
+    bottom: -5px;
+    transform: rotate(-60deg);
+  }
+
+  .nav-bar {
+    background: #111;
+    padding: 11px 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    box-sizing: border-box;
+  }
+
+  .nav-bar a {
+    color: #a8e6ff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Barrio', monospace !important;
+  }
+
+  .nav-bar span {
+    color: #ff66ff;
+  }
+
+
+
+
+.foto-filme {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto; 
+  display: block;              
+  text-decoration: none;       
+  cursor: pointer;             
+  transition: transform .2s ease;
+}
+
+.foto-filme:hover {
+  transform: scale(1.02);      
+}
+
+
+.foto {
+  width: 100%;
+  max-width: 1100px;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #a8e6ff;
+}
+
+
+.titulo-filme {
+  position: absolute;
+  bottom: 100px;  
+  left: 20px;
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.texto-filme {
+  position: absolute;
+  bottom: 20px; 
+  left: 20px;
+  background: #ff72d6;
+  padding: 15px;
+  max-width: 70%;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.ceu-titulo {
+  margin: 80px auto 40px;
+  text-align: center;
+  font-family: 'Barrio';
+  color: #ff72d6;
+  font-size: 35px;
+}
+
+.ceu-titulo span {
+  color: #a8e6ff;
+  font-size: 28px;
+}
+
+/* GRID estilo CAPRICHO */
+.grade-destaquesum {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+.grade-destaquesdois {
+    padding: 15px;
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+/* Cards */
+.card {
+  background: #000;
+  padding: 15px;
+  border: 3px solid #a8e6ff;
+  display: block;              
+  text-decoration: none;       
+  cursor: pointer;             
+  transition: transform .2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);      
+}
+
+
+/* Imagens com borda */
+.img-cardp {
+  width: 500px;
+  border: 3px solid #000;
+  display: block;
+}
+
+.img-cardg {
+  width: 700px;
+  border: 3px solid #000;
+  display: block;
+}
+
+
+.tag-roxa {
+  background: #ff72d6;
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Press Start 2P';
+  border: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.tag-celeste {
+  background: #a8e6ff;
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Press Start 2P';
+  border: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Títulos dos cards */
+.titulo-carda {
+  background: #a8e6ff;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Barrio';
+  margin-top: 10px;
+  color: #000;
+}
+
+.titulo-cardr {
+  background: #ff72d6;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Barrio';
+  margin-top: 10px;
+  color: #000;
+}
+
+/* Texto */
+.texto-card {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+
+.titulo-materia {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.titulo-grande {
+  font-size: 58px;
+  font-family: 'Zalando Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.subtitulo-grande {
+  font-size: 25px;
+  font-family: 'Zalando Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto 25px;
+}
+
+.linha-estrelasa {
+  color: #a8e6ff;
+  margin-top: 40px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.linha-estrelasr {
+  color: #ff72d6;
+  margin-top: 40px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.ladinho {
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+  font-family: 'Zalando Sans', sans-serif;
+  font-weight: 400;
+  gap: 20px;               
+  max-width: 1000px;
+  margin: 20px auto;       
+}
+
+.img-ladoa {
+  width: 400px;
+  border: 3px solid #a8e6ff;
+  border-radius: 10px;
+}
+
+.img-lador {
+  width: 400px;
+  border: 3px solid #ff72d6;
+  border-radius: 10px;
+}
+
+
+.texto-paginapic {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  text-align: left; 
+}
+
+.texto-paginapicp {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  text-align: left; 
+}
+
+.texto-pagina {
+  font-family: 'Zalando Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;  
+  max-width: 900px;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0 auto 20px; 
+}
+
+
+.relacionadas {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 10px;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.relacionadas h2 {
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.relacionadas .linha {
+  width: 120px;
+  height: 5px;
+  background: #ff5e29;
+  margin: 8px 0 25px 0;
+}
+
+.relacionadas .itema a {
+  display: inline-block;
+  background: #a8e6ff;
+  padding: 10px 12px;
+  font-family: 'Zalando Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.relacionadas .itemr a {
+  display: inline-block;
+  background: #ff72d6;
+  padding: 10px 12px;
+  font-family: 'Zalando Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*aste azul*/
+.asteriscosa {
+  font-size: 15px;
+  margin: 10px 0 10px;
+  color: #a8e6ff;
+}
+/*asterisco rosa*/
+.asteriscosr {  
+  font-size: 15px;
+  margin: 10px 0 10px;
+  color: #ff72d6;
+}
